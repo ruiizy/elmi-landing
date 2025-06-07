@@ -5,9 +5,12 @@ import "./style.css";
 gsap.registerPlugin(SplitText);
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
+  <section class="lula">
     <h1 class="split">Lula Mungula</h1>
-  </div>
+  </section>
+  <section class="elmi">
+    <h1 class="split">Elmi fea</h1>
+  </section>
 `;
 
 const split = SplitText.create(".split", {

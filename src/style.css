@@ -13,21 +13,30 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100dvh;
+    text-align: center;
+}
+
+section {
+    height: 100dvh;
     display: flex;
     place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.elmi {
+    background-color: cadetblue;
 }
 
 h1 {
     font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-#app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
 }
